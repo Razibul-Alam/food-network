@@ -2,10 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
-   
 }
 
 .container{
@@ -14,7 +14,7 @@ body{
     
 }
 
-/* navbar ok */
+
 .navbar{
     width: 100%;
     height: 80px;
@@ -25,14 +25,17 @@ body{
     
     
 }
-.nav-blank{
+
+.nav-logo{
     width: 50%;
     margin-left: 25px;
 }
+
 .nav-menu{
     width: 37%;
     display: flex;
 }
+
 ul li{
 display: inline-block;
 margin-left: 20px;
@@ -58,7 +61,7 @@ a{
     width: 40%; 
     
      padding: 3%;
-    /* height: 550px; */
+    
     
     
 }
@@ -89,50 +92,38 @@ a{
     color: orangered;
     margin-top: 10px; 
 }
-h2 span{
-    font-weight: 500;
-    color: orangered;
-    
-}
-h1{
-    font-size: 40px;
-    font-weight: 500;
-}
-/* span h2{
-    font-weight: 900;
-    font-size: 50px;
-    color:orangered;
-    padding-bottom: 10px;
-}  */
+
+
 
 p{
     margin-bottom: 30px;
     color:gray;
     
 }
+
+
 .recipie-section{
     text-align: center;
     padding:30px 0;
 }
 
-.project-section{
+.food-section{
 display: flex;
 justify-content: space-between;
 }
 
-.project-div{
+.food-div{
     width: 30%;
     margin-left: 30px;
     box-shadow: 8px 8px 10px lightgray;
     border-radius: 10px;
     padding: 20px;
 }
-.project-div img{
+.food-div img{
     width: 100%;
 
    
 }
-
 
 .button{
     text-decoration: none;
@@ -144,15 +135,8 @@ justify-content: space-between;
 }
 
 
-/* h1,h2,h6,p{
-    padding-bottom: 10px;
-} */
-.project-section{
-    
-    /* margin-left: 50px; */
-    
-    padding-top: 30px; 
-}
+
+
 
 .client-section{
     width: 100%;
@@ -234,5 +218,13 @@ box-shadow:8px 8px 10px whitesmoke
     align-items: center;
 }
 
-
+h2 span{
+    font-weight: 500;
+    color: orangered;
+    
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+}
 
