@@ -158,12 +158,12 @@ justify-content: space-between;
     padding-top: 1.3rem;
 }
 .client img{
-    width: 100%;
+    width: 80%;
 }
 .review{
 border-radius: 0.7rem;
 padding: 1.3rem;
-width: 100%;
+width: 80%;
 box-shadow:0.5rem 0.5rem 0.7rem whitesmoke
 }
 
@@ -235,7 +235,7 @@ h1{
 /* *************** */
 /* media query */
 /* ************** */
-@media (min-width:450px) and (max-width:768px){
+@media (min-width:300px) and (max-width:768px){
     .container{
         max-width: 100%;
         /* flex-wrap: wrap; */
@@ -280,5 +280,13 @@ h1{
     }
     html{
         font-size: 0.75rem !important;
+    }
+    .client-review{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.3rem;
     }
 }
