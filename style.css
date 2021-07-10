@@ -1,6 +1,9 @@
-*{
+*{  
     padding: 0px;
     margin: 0px;
+}
+body{
+    font-size: 1rem;
 }
 
 body{
@@ -28,7 +31,7 @@ body{
 
 .nav-logo{
     width: 50%;
-    margin-left: 25px;
+    margin-left: 1.5rem;
 }
 
 .nav-menu{
@@ -38,13 +41,14 @@ body{
 
 ul li{
 display: inline-block;
-margin-left: 20px;
+margin-left: 1.3rem;
+list-style: none;
 }
 
 a{
     text-decoration: none;
-    padding: 10px;
-    color: white;
+    padding: 0.75rem;
+    color:white;
     
 }
 
@@ -54,7 +58,7 @@ a{
 .top-section{
     width: 100%;
    display: flex;
-   padding: 30px 0;
+   padding: 2rem 0;
 }
 
 .top-half{
@@ -78,7 +82,7 @@ a{
     background: url('./images/7.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0;
+    padding: 3rem 0;
     align-items: center;
     justify-content: center;
     
@@ -88,15 +92,15 @@ a{
 }
  h1 span{
     font-weight: 500;
-    font-size: 35px;
+    font-size: 2.1rem;
     color: orangered;
-    margin-top: 10px; 
+    margin-top: 0.75rem; 
 }
 
 
 
 p{
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     color:gray;
     
 }
@@ -104,7 +108,7 @@ p{
 
 .recipie-section{
     text-align: center;
-    padding:30px 0;
+    padding:2rem 0;
 }
 
 .food-section{
@@ -114,10 +118,10 @@ justify-content: space-between;
 
 .food-div{
     width: 30%;
-    margin-left: 30px;
-    box-shadow: 8px 8px 10px lightgray;
-    border-radius: 10px;
-    padding: 20px;
+    margin-left: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem lightgray;
+    border-radius: 0.7rem;
+    padding: 1.3rem;
 }
 .food-div img{
     width: 100%;
@@ -128,8 +132,8 @@ justify-content: space-between;
 .button{
     text-decoration: none;
     border: 1px solid tomato;
-    border-radius: 10px;
-    padding: 7px 30px;
+    border-radius: 0.7rem;
+    padding: 0.45rem 2rem;
     background-image: linear-gradient(180deg,orange,orangered);
     color: white;
 }
@@ -141,7 +145,7 @@ justify-content: space-between;
 .client-section{
     width: 100%;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 3rem;
     
 }
 
@@ -151,34 +155,34 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1.3rem;
 }
 .client img{
-    width: 30%;
+    width: 100%;
 }
 .review{
-border-radius: 10px;
-padding: 20px;
-width: 50%;
-box-shadow:8px 8px 10px whitesmoke
+border-radius: 0.7rem;
+padding: 1.3rem;
+width: 100%;
+box-shadow:0.5rem 0.5rem 0.7rem whitesmoke
 }
 
 .quote{
-    font-size: 30px;
+    font-size: 2rem;
     color: red;
 }
 
 .social{
    display: flex;
-   padding-top: 30px;
+   padding-top: 2rem;
    justify-content: center;
    align-items: center;
-   padding: 40px 0;
+   padding: 2.5rem 0;
 }
 
 .social-div{
     width: 30%;
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
 }
 .social-div img{
@@ -195,12 +199,12 @@ box-shadow:8px 8px 10px whitesmoke
 }
 .text-red{
     color: orangered;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
 }
 .text-blue{
     color: darkblue;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -212,7 +216,7 @@ box-shadow:8px 8px 10px whitesmoke
     background-color: black;
     color: white;
     text-align: center;
-    height: 150px;
+    height: 9.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,8 +227,57 @@ h2 span{
     color: orangered;
     
 }
-h1{
-    font-size: 40px;
+/* h1{
+    font-size: 2.5rem;
     font-weight: 500;
-}
+} */
 
+/* *************** */
+/* media query */
+/* ************** */
+@media (min-width:450px) and (max-width:668px){
+    .container{
+        max-width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    .navbar{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .top-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .about{
+        flex-direction: column;
+    }
+    .food-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        flex-direction: column;
+    }
+    .food-div{
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .food-div img{
+        max-width: 100%;
+    }
+    .top-half{
+        max-width: 100%;
+    }
+    .top-half img{
+        max-width: 100%;
+    }
+    .nav-menu ul li{
+        display: block;
+    }
+    html{
+        font-size: 0.75rem !important;
+    }
+}
