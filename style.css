@@ -227,15 +227,15 @@ h2 span{
     color: orangered;
     
 }
-/* h1{
+h1{
     font-size: 2.5rem;
     font-weight: 500;
-} */
+}
 
 /* *************** */
 /* media query */
 /* ************** */
-@media (min-width:450px) and (max-width:668px){
+@media (min-width:450px) and (max-width:768px){
     .container{
         max-width: 100%;
         /* flex-wrap: wrap; */
@@ -264,6 +264,7 @@ h2 span{
     .food-div{
         max-width: 100%;
         margin-top: 2rem;
+        padding: 0rem 1.5rem;
     }
     .food-div img{
         max-width: 100%;
